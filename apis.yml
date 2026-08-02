@@ -1,4 +1,16 @@
 aid: wholeshare
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wholeshare.png
 name: WholeShare
 description: WholeShare is a company surfaced as a portfolio company of 500-global, a16z and added to
   the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
@@ -11,9 +23,15 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: parked-domain
+x-status-detail: 'wholeshare.com resolves (HTTP 200) but serves a GoDaddy parking-lander
+  page (window._trfd ap:parking, assets from img1.wsimg.com/parking-lander). No active
+  company site, no API surface: api./developer./docs.wholeshare.com do not resolve, and
+  every path (/.well-known/*, /openapi.json, /llms.txt) returns the identical parking
+  redirect HTML (soft-404, content-type text/html). Defunct/parked VC-portfolio lead.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 apis: []
@@ -25,3 +43,11 @@ maintainers:
 common:
 - type: Website
   url: https://wholeshare.com
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  note: 'Probed live surface (homepage, api/developer/docs subdomains, /.well-known/*,
+    /openapi.json, /llms.txt). Domain is parked (GoDaddy parking-lander); no API surface
+    exists. No artifacts fabricated.'
